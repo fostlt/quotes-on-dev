@@ -33,7 +33,7 @@ a {
 	width: 100%;
 
 	ul {
-		display: none;
+		// display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -128,5 +128,18 @@ a {
 		float: right;
 		text-align: right;
 		width: 50%;
+	}
+}
+
+
+/* Navigation */
+
+.main-navigation {
+	padding: 0px;
+	text-decoration: none;
+	a {
+		color: #00cc00;
+		padding-right: 5px;
+		font-family: 'Exo', sans-serif;
 	}
 }

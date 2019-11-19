@@ -31,3 +31,48 @@
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+
+
+/* all */
+body {
+	background-color:#222222;
+	font-size: 16px;
+	color: #ffffff;
+	line-height: 1.5;
+}
+
+/* header */
+
+.logo {
+	width: 300px;
+}
+
+.entry-title {
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+
+/* content */
+.entry-meta{
+	padding: 0px;
+	flex-wrap: nowrap;
+	display: flex;
+	font-family: 'Exo', sans-serif;
+	align-items: center;
+}
+
+.source {
+	color: #fff;
+	a{
+		color: #00cc00;
+
+	}
+
+}
+
+.site-info {
+	a{
+		text-decoration: none;
+		color: #00cc00;
+	}
+}
