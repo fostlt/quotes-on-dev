@@ -25,7 +25,7 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Brought to you by RED Academy' ), 'WordPress' ); ?></a>
+					Brought to you by <a class="footer-bottom-info" href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Red Academy' ), 'WordPress' ); ?></a>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

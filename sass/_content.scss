@@ -39,17 +39,49 @@ body {
 	font-size: 16px;
 	color: #ffffff;
 	line-height: 1.5;
+
+	@include tab {
+		//background-color: red;
+	}
+
+	@include lrg {
+		//background-color: green;
+	}
+
 }
 
+
+.home{
+padding: 5%;
+}
 /* header */
+
 
 .logo {
 	width: 300px;
+	margin-top: 2rem;
+
+	@include tab {
+		width:500px;
+		
+	}
+
+	@include lrg {
+		width: 700px;
+		margin: 0 auto;
+		display: flex;
+	}
+
+
 }
 
 .entry-title {
 	font-size: 1.25rem;
 	font-weight: 400;
+}
+
+.entry-content {
+	margin-top: 2rem;
 }
 
 /* content */
@@ -59,6 +91,7 @@ body {
 	display: flex;
 	font-family: 'Exo', sans-serif;
 	align-items: center;
+
 }
 
 .source {
@@ -71,8 +104,31 @@ body {
 }
 
 .site-info {
+	margin-top: 2.5rem;
+	margin-bottom: 2rem;
 	a{
 		text-decoration: none;
 		color: #00cc00;
 	}
+
+
+}
+/* about section  */
+.about-paragraph{
+	font-family: 'Exo', sans-serif;
+}
+
+
+.about-quotes {
+	text-decoration: none;
+	color: #00cc00;	
+
+}
+
+.about-logo {
+	padding:0px;
+}
+
+.page-template-default {
+	padding: 2.5%;
 }

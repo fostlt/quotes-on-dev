@@ -18,7 +18,7 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-	<img class="logo" src="<?php echo get_template_directory_uri(); ?>/../../../assets/qod-logo.svg" />
+			<img class="logo about-logo" src="<?php echo get_template_directory_uri(); ?>/../../../assets/qod-logo.svg" />
 	
 
 			<div id="content" class="site-content">

@@ -31,6 +31,13 @@ a {
 	display: block;
 	float: left;
 	width: 100%;
+	margin-bottom: .5rem;
+	
+	@include tab {
+		float: none;
+	}
+
+
 
 	ul {
 		// display: none;
@@ -137,9 +144,21 @@ a {
 .main-navigation {
 	padding: 0px;
 	text-decoration: none;
+	
 	a {
 		color: #00cc00;
-		padding-right: 5px;
+		padding-right: 1rem;
+		padding-left: 1rem;
 		font-family: 'Exo', sans-serif;
+		border-right: 1px solid #fff;
+
+		@include tab {
+			padding-right: 0.5rem;
+			padding-left: 0rem;
+			margin-right: 10px;
+		}
+
+
 	}
 }
+

@@ -71,4 +71,11 @@ big {
 p {
 	font-family: 'Exo', sans-serif;
 	font-size: 1.25rem;
+	@include tab {
+		font-size: 1.75rem;
+	}
+
+	@include lrg {
+		font-size: 2.5rem;
+	}
 }
