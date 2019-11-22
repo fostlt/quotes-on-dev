@@ -38,3 +38,38 @@
 })(jQuery);
 
 //IIFE
+(function( $ ) {
+
+  $('#quote-submission-form').on('submit', function(event) {
+     event.preventDefault();
+
+    const subData = {
+        title: $('#quote-author').val(),
+        content: $('#quote').val(),
+        _qod_quote_source_url: $('#quote-location').val(),
+        _qod_quote_source: $('quote-url').val()
+
+
+    };
+console.log(subData);
+
+   
+     $.ajax({
+        method: 'post',
+        url: qod_vars.rest_url + 'wp/v2/posts/',
+        data: subData,
+        beforeSend: function(xhr) {
+           xhr.setRequestHeader( 'X-WP-Nonce', qod_vars.nonce );
+        }
+
+     }).done( function() {
+        //$('#quote-author').val(),
+        //$('#quote').val(),
+        //$('#quote-location').val(),
+        //$('quote-url').val(),
+        alert('Success! Comments are closed for this post.');
+     }).fail(function(data){
+        alert("Hey, it's not working. " + data);
+     });
+  });
+})( jQuery );

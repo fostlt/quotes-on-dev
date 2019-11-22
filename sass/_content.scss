@@ -187,3 +187,38 @@ li {
 a {
 	text-decoration: none;	
 }
+
+//submit a quote section
+
+
+.quote-submission-wrapper div {
+	display: flex;
+	flex-wrap: nowrap;
+	font-family: 'Exo', sans-serif;
+	flex-direction: column;
+	margin-bottom: 1rem;
+	
+}
+
+#quote-author {
+	width: 17rem;
+	border: 2px solid #00cc00;
+	background: #222222;
+}
+
+#quote-content {
+	border: 2px solid #00cc00;
+	background: #222222;
+}
+
+#quote-source {
+	width: 17rem;
+	border: 2px solid #00cc00;
+	background: #222222;
+}
+
+#quote-source-url {
+	width: 17rem;
+	border: 2px solid #00cc00;
+	background: #222222;
+}

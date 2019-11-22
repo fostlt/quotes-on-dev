@@ -401,6 +401,14 @@ textarea {
       display: flex;
       padding: 1rem 3rem; } }
 
+#quote-submission-form input {
+  background-color: #222222;
+  color: #00cc00;
+  border: 2px solid #00cc00;
+  font-size: 1rem;
+  padding: .70rem 2.0rem;
+  margin-top: 1rem; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -714,6 +722,38 @@ li {
 
 a {
   text-decoration: none; }
+
+.quote-submission-wrapper div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-family: 'Exo', sans-serif;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1rem; }
+
+#quote-author {
+  width: 17rem;
+  border: 2px solid #00cc00;
+  background: #222222; }
+
+#quote-content {
+  border: 2px solid #00cc00;
+  background: #222222; }
+
+#quote-source {
+  width: 17rem;
+  border: 2px solid #00cc00;
+  background: #222222; }
+
+#quote-source-url {
+  width: 17rem;
+  border: 2px solid #00cc00;
+  background: #222222; }
 
 /*--------------------------------------------------------------
 # Media
