@@ -1,25 +1,40 @@
-(function($){
+(function($) {
+  let lastPage = '';
 
-    /// code goes here
-    
-    // get request to grab random and append to the DOM
+  $('#new-quote-button').on('click', function(event) {
+    event.preventDefault();
 
-    // add a click event for the "show men another" btn nd then run AJAX code below
-    //run as event listener or put it in a button
-
+    lastPage = document.URL;
     $.ajax({
-        method: "GET",
-        url: // qod_vars.rest_url + /wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1
-    }).done(function(data){
+      method: 'GET',
+      url:
+        qod_vars.rest_url +
+        '/wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1'
+    })
+      .done(function(data) {
         console.log(data);
-        // append the quote to the DOM
-    }).fail(function(error){
-        console.log("an error occurred", error);
+        const post = data[0];
+        history.pushState(null, null, qod_vars.home_url + '/' + post.slug);
+
+        $('.entry-content').html(data[0].content.rendered);
+        $('.entry-title').html(data[0].title.rendered);
+
+        if (data[0]._qod_quote_source_url !== '') {
+          $('.source').html(
+            `,<a href="${data[0]._qod_quote_source_url}">${data[0]._qod_quote_source}</a>`
+          );
+          
+        } else {
+          $('.source').html(data[0]._qod_quote_source);
+        }
+      })
+      .fail(function(error) {
+        console.log('an error occurred', error);
+      });
+    $(window).on('popstate', function() {
+      window.location.replace(lastPage);
     });
-    // post a new quote using hte post method
-    // using a form to submit a quote so a .submit
-    //
+  });
+})(jQuery);
 
-})(jQuery)
-
-//IIFE 
+//IIFE

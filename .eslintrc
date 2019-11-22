@@ -13,12 +13,14 @@
     "no-eq-null": 0,
     "guard-for-in": 1,
     "no-empty": 1,
-    "quotes": [1, "single"]
+    "quotes": [1, "single"],
+    "no-irregular-whitespace": 0
   },
   "globals": {
     "jQuery": false,
     "$": false,
-    "_": false
+    "_": false,
+    "qod_vars": false
   },
   "env": {
     "es6": true,

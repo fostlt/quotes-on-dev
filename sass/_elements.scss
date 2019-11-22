@@ -35,24 +35,7 @@ hr {
   margin-bottom: $base__space-unit;
 }
 
-ul,
-ol {
-  margin: 0 0 $base__space-unit ($base__space-unit * 2);
-}
 
-ul {
-  list-style: disc;
-}
-
-ol {
-  list-style: decimal;
-}
-
-li > ul,
-li > ol {
-  margin-bottom: 0;
-  margin-left: $base__space-unit;
-}
 
 dt {
   font-weight: bold;
@@ -70,4 +53,10 @@ img {
 table {
   margin: 0 0 $base__space-unit;
   width: 100%;
+}
+
+
+.post-archives ul li {
+  font-family: 'Exo', sans-serif;
+margin-bottom: 1rem;
 }

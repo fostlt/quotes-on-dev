@@ -320,21 +320,6 @@ hr {
   height: 1px;
   margin-bottom: 1.5rem; }
 
-ul,
-ol {
-  margin: 0 0 1.5rem 3rem; }
-
-ul {
-  list-style: disc; }
-
-ol {
-  list-style: decimal; }
-
-li > ul,
-li > ol {
-  margin-bottom: 0;
-  margin-left: 1.5rem; }
-
 dt {
   font-weight: bold; }
 
@@ -350,6 +335,10 @@ img {
 table {
   margin: 0 0 1.5rem;
   width: 100%; }
+
+.post-archives ul li {
+  font-family: 'Exo', sans-serif;
+  margin-bottom: 1rem; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -417,15 +406,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #00cc00; }
   a:visited {
-    color: #00cc00; }
-  a:hover, a:focus, a:active {
     color: #00cc00; }
   a:focus {
     outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
 
 /* Menus */
 .main-navigation {
@@ -512,6 +497,22 @@ a {
         padding-right: 0.5rem;
         padding-left: 0rem;
         margin-right: 10px; } }
+
+/* ul style */
+.post-archives ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  margin-right: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none; }
+  .post-archives ul li {
+    margin-right: 20px;
+    text-decoration: none; }
+  .post-archives ul a {
+    text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -625,6 +626,10 @@ body {
   font-size: 1.25rem;
   font-weight: 400; }
 
+.entry-header h1 {
+  font-size: 2rem;
+  font-weight: 400; }
+
 .entry-content {
   margin-top: 2rem; }
 
@@ -666,6 +671,49 @@ body {
 
 .page-template-default {
   padding: 2.5%; }
+
+/* about */
+.category-archives {
+  padding: 0px; }
+
+.category-archives h2 {
+  font-family: 'Exo', sans-serif; }
+
+.category-archives ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.category-archives li {
+  font-family: 'Exo', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  margin-right: 1rem;
+  margin-bottom: .5rem; }
+
+.tag-archives {
+  font-family: 'Exo', sans-serif; }
+
+.wp-tag-cloud {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.wp-tag-cloud li {
+  margin-right: 1rem;
+  margin-bottom: .5rem; }
+
+/* TODO override because I'm too lazy to look right now sorry, it's the end of the day */
+li {
+  list-style-type: none;
+  text-decoration: none; }
+
+a {
+  text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Media

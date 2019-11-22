@@ -13,14 +13,14 @@ a {
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		//color: $color__link-hover;
 	}
 	&:focus {
 		outline: thin dotted;
 	}
 	&:hover,
 	&:active {
-		outline: 0;
+		//outline: 0;
 	}
 }
 
@@ -162,3 +162,22 @@ a {
 	}
 }
 
+
+/* ul style */
+.post-archives ul{
+	display: flex;
+	text-decoration: none;
+	margin-right: 10px;
+	flex-wrap: wrap;	
+	list-style-type: none;
+
+	li{
+		margin-right: 20px;
+		text-decoration: none;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+}
