@@ -230,7 +230,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Exo", sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -285,7 +285,7 @@ p {
       font-size: 1.75rem; } }
   @media (min-width: 1079px) {
     p {
-      font-size: 2.5rem; } }
+      font-size: 1.5rem; } }
 
 /*--------------------------------------------------------------
 # Elements
@@ -611,6 +611,12 @@ body {
   font-size: 16px;
   color: #ffffff;
   line-height: 1.5; }
+  @media (min-width: 619px) {
+    body {
+      background-color: red; } }
+  @media (min-width: 1079px) {
+    body {
+      background-color: green; } }
 
 .home {
   padding: 5%; }
@@ -665,10 +671,19 @@ body {
   .site-info a {
     text-decoration: none;
     color: #00cc00; }
+  @media (min-width: 1079px) {
+    .site-info {
+      padding: 0px; } }
 
 /* about section  */
 .about-paragraph {
   font-family: 'Exo', sans-serif; }
+  @media (min-width: 619px) {
+    .about-paragraph {
+      font-size: 1.5rem; } }
+  @media (min-width: 1079px) {
+    .about-paragraph {
+      font-size: 1.5rem; } }
 
 .about-quotes {
   text-decoration: none;
@@ -679,6 +694,9 @@ body {
 
 .page-template-default {
   padding: 2.5%; }
+
+.about-title {
+  font-size: 2.5rem; }
 
 /* about */
 .category-archives {

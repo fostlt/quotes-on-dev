@@ -67,9 +67,16 @@ console.log(subData);
         //$('#quote').val(),
         //$('#quote-location').val(),
         //$('quote-url').val(),
-        alert('Success! Comments are closed for this post.');
+        //alert('Success! Comments are closed for this post.');
+        $('#content').append('Thanks, your quote submission was received.');
+        $('#quote-submission-form').slideUp();
+
+
+
      }).fail(function(data){
         alert("Hey, it's not working. " + data);
+        
+        
      });
   });
 })( jQuery );

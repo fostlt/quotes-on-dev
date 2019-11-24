@@ -18,7 +18,7 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-			<img class="logo about-logo" src="<?php echo get_template_directory_uri(); ?>/../../../assets/qod-logo.svg" />
+		<a href="http://localhost:3000/qod/">	<img class="logo about-logo" src="<?php echo get_template_directory_uri(); ?>/../../../assets/qod-logo.svg" /> </a>
 	
 
 			<div id="content" class="site-content">
