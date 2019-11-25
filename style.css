@@ -409,6 +409,14 @@ textarea {
   padding: .70rem 2.0rem;
   margin-top: 1rem; }
 
+fieldset {
+  padding: 0px;
+  border: 2px solid #00cc00; }
+
+fieldset input {
+  background-color: #222222;
+  color: #fff; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -522,6 +530,13 @@ a {
   .post-archives ul a {
     text-decoration: none; }
 
+/* 404 Search Form */
+.search-form {
+  width: 250px; }
+
+.search-submit {
+  display: none; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -620,6 +635,9 @@ body {
 
 .home {
   padding: 5%; }
+  @media (min-width: 1079px) {
+    .home {
+      padding: 10%; } }
 
 /* header */
 .logo {
@@ -675,6 +693,11 @@ body {
     .site-info {
       padding: 0px; } }
 
+@media (min-width: 1079px) {
+  .content-area {
+    padding-left: 20%;
+    padding-right: 20%; } }
+
 /* about section  */
 .about-paragraph {
   font-family: 'Exo', sans-serif; }
@@ -697,6 +720,11 @@ body {
 
 .about-title {
   font-size: 2.5rem; }
+
+@media (min-width: 1079px) {
+  .site-content {
+    max-width: 1080px;
+    margin: 0 auto; } }
 
 /* about */
 .category-archives {
@@ -773,6 +801,10 @@ a {
   border: 2px solid #00cc00;
   background: #222222; }
 
+/* 404 */
+.search-form input {
+  width: 240px; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -795,3 +827,22 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+@media (min-width: 1079px) {
+  .site-content {
+    display: block;
+    position: relative; }
+    .site-content:before, .site-content:after {
+      position: absolute;
+      color: #0c0;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      line-height: 1;
+      font-size: 8em; }
+    .site-content:before {
+      content: "\f10d";
+      top: 0;
+      left: -140px; }
+    .site-content:after {
+      content: "\f10e";
+      top: 0;
+      right: -95px; } }

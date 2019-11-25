@@ -5,3 +5,31 @@
 /* All Archives Page */
 
 /* Submit a Quote Page */
+.site-content {
+	@include lrg {
+
+		display: block;
+		position: relative; 
+
+		&:before, &:after {
+			position: absolute;
+			color: #0c0;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 900;
+            line-height: 1;	
+            font-size: 8em;
+		}
+
+		&:before {
+			content: "\f10d";
+			top: 0; 
+			left: -140px;
+		}
+
+		&:after {
+			content: "\f10e";
+			top: 0;
+			right: -95px;
+		}
+	}
+}
